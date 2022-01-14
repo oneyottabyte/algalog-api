@@ -1,16 +1,13 @@
 package com.algaworks.algalog.domain.service;
 
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.algaworks.algalog.domain.exception.NegocioException;
 import com.algaworks.algalog.domain.model.Cliente;
 import com.algaworks.algalog.domain.model.Entrega;
 import com.algaworks.algalog.domain.model.StatusEntrega;
-import com.algaworks.algalog.domain.repository.ClienteRepository;
 import com.algaworks.algalog.domain.repository.EntregaRepository;
 
 import lombok.AllArgsConstructor;

@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.algaworks.algalog.domain.model.Cliente;
+import com.algaworks.algalog.api.mapper.EntregaMapper;
+import com.algaworks.algalog.api.model.EntregaModel;
+import com.algaworks.algalog.api.model.input.EntregaInput;
 import com.algaworks.algalog.domain.model.Entrega;
 import com.algaworks.algalog.domain.repository.EntregaRepository;
 import com.algaworks.algalog.domain.service.EntregaService;
@@ -28,22 +30,27 @@ public class EntregaController {
 
 	private EntregaService entregaService;
 	private EntregaRepository entregaRepository;
+	private EntregaMapper entregaMapper;
+	
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public Entrega criar (@Valid @RequestBody Entrega entrega) {
-		return entregaService.criar(entrega);
+	public EntregaModel criar (@Valid @RequestBody EntregaInput entregaInput) {
+		Entrega novaEntrega = entregaMapper.toEntity(entregaInput);
+		Entrega entregaCriada = entregaService.criar(novaEntrega);
+		
+		return entregaMapper.toModel(entregaCriada);
 	}
 	
 	@GetMapping
-	public List<Entrega> listar() {
-		return entregaRepository.findAll();
+	public List<EntregaModel> listar() {
+		return entregaMapper.toCollectionModel(entregaRepository.findAll());
 	}
 	
 	@GetMapping("/{entregaId}")
-	public ResponseEntity<Entrega> buscar(@PathVariable Long entregaId) {
+	public ResponseEntity<EntregaModel> buscar(@PathVariable Long entregaId) {
 		return entregaRepository.findById(entregaId)
-				.map(ResponseEntity::ok)  
+				.map(entrega -> ResponseEntity.ok(entregaMapper.toModel(entrega)))
 				.orElse(ResponseEntity.notFound().build());
 	}
 }
