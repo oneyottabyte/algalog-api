@@ -14,9 +14,9 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @Service
-public class EntregaService {
+public class SolicitacaoEntregaService {
 	
-	private ClienteService clienteService;
+	private CatalogoClienteService clienteService;
 	private EntregaRepository entregaRepository;
 	
 	@Transactional

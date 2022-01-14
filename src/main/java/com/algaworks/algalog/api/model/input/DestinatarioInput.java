@@ -8,6 +8,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class DestinatarioInput {
+	
 	@NotBlank
 	private String nome;
 	

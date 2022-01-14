@@ -19,7 +19,7 @@ import com.algaworks.algalog.api.model.EntregaModel;
 import com.algaworks.algalog.api.model.input.EntregaInput;
 import com.algaworks.algalog.domain.model.Entrega;
 import com.algaworks.algalog.domain.repository.EntregaRepository;
-import com.algaworks.algalog.domain.service.EntregaService;
+import com.algaworks.algalog.domain.service.SolicitacaoEntregaService;
 
 import lombok.AllArgsConstructor;
 
@@ -28,7 +28,7 @@ import lombok.AllArgsConstructor;
 @RequestMapping("/entregas")
 public class EntregaController {
 
-	private EntregaService entregaService;
+	private SolicitacaoEntregaService entregaService;
 	private EntregaRepository entregaRepository;
 	private EntregaMapper entregaMapper;
 	

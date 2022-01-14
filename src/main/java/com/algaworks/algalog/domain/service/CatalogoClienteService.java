@@ -11,7 +11,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @Service
-public class ClienteService {
+public class CatalogoClienteService {
 	
 	private ClienteRepository clienteRepository;
 	
