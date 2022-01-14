@@ -1,6 +1,9 @@
+![](https://msr.algaworks.com/img/MSR_logo.f7f5959fd043d33bf2c2ec21498c19abfa170e0bcdca0b715f943a7afd402852.png)
+
 # algalog-api
 
 Criando uma api na Semana Spring REST - AlgaWorks.
+
 
 <h1 id="arquitetura">
 <img src="https://img.icons8.com/office/30/000000/blueprint.png"/>
