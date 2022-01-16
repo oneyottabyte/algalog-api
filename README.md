@@ -86,3 +86,5 @@ localhost:8080/clientes/5
      <td align="center"><a href="https://github.com/oneyottabyte"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/oneyottabyte" width="100px;" alt=""/><br /><sub><b>Dorian Vieira</b></sub></a><br /><a href="https://github.com/oneyottabyte" title="Dorian Vieira"></a></td>
 </table>
 
+## Agradecimentos
+[Algaworks](https://www.algaworks.com/)
