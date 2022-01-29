@@ -70,6 +70,7 @@ localhost:8080/clientes/5
 - [Java 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) - Versão do Java utilizada
 - [Spring boot](https://spring.io/projects/spring-boot) - Framework de desenvolvimento
 - [Maven](https://maven.apache.org/) - Gerenciador de dependencias
+- [Swagger](https://swagger.io/) - Documentação oficial da API
 - [Flyway](https://flywaydb.org/) - Controle de versão para o banco de dados
 - [MySql Database](https://www.mysql.com/) - Database para o ambiente de produção
 - [Spring Data Jpa](https://spring.io/projects/spring-data-jpa) - Abstração orm do spring pra integração com o banco de dados
