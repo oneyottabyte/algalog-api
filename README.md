@@ -1,8 +1,20 @@
+![](https://msr.algaworks.com/img/MSR_logo.f7f5959fd043d33bf2c2ec21498c19abfa170e0bcdca0b715f943a7afd402852.png)
+
 # algalog-api
 
 Criando uma api na Semana Spring REST - AlgaWorks.
 
-## CRUD AlgaLog
+
+<h1 id="arquitetura">
+<img src="https://img.icons8.com/office/30/000000/blueprint.png"/>
+  Arquitetura do Projeto
+</h1>
+
+![Diagrama](https://github.com/oneyottabyte/algalog-api/blob/main/assets/Diagrama%20de%20classes.JPG?raw=true/)
+
+
+![algalog](https://github.com/oneyottabyte/algalog-api/blob/main/assets/algalog-api.JPG?raw=true)
+## CRUD Cliente
 
 
 ### GET - Listar (success code: 200 OK)
@@ -48,4 +60,31 @@ Body example
 localhost:8080/clientes/5
 ```
 
+<h1 id="tecnologias-dependencias">
+<img height="30" src="https://img.icons8.com/fluency/50/000000/administrative-tools.png"/>
+	Tecnologias e Dependências
+</h1>
 
+<a name = "tech_stack"></a>
+
+- [Java 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) - Versão do Java utilizada
+- [Spring boot](https://spring.io/projects/spring-boot) - Framework de desenvolvimento
+- [Maven](https://maven.apache.org/) - Gerenciador de dependencias
+- [Flyway](https://flywaydb.org/) - Controle de versão para o banco de dados
+- [MySql Database](https://www.mysql.com/) - Database para o ambiente de produção
+- [Spring Data Jpa](https://spring.io/projects/spring-data-jpa) - Abstração orm do spring pra integração com o banco de dados
+- [Postman](https://www.postman.com/) - Ferramenta para testes nas requisições
+- [Lombok](https://projectlombok.org/) - Framework para abstração e melhora na legibilidade do código
+
+
+<h1 id="desenvolvedors">
+<img height="30" src="https://img.icons8.com/color/48/000000/devpost.png"/>
+  Desenvolvedor
+</h1>
+
+<table align="center">
+     <td align="center"><a href="https://github.com/oneyottabyte"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/oneyottabyte" width="100px;" alt=""/><br /><sub><b>Dorian Vieira</b></sub></a><br /><a href="https://github.com/oneyottabyte" title="Dorian Vieira"></a></td>
+</table>
+
+## Agradecimentos
+[Algaworks](https://www.algaworks.com/)
